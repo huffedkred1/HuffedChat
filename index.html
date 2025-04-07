@@ -1,10 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
   <title>Huffedchat</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="app.js"></script>
 </head>
 <body>
-  <h1>Welcome to Huffedchat 👋</h1>
-  <p>This is the beginning of your chat app.</p>
+  <nav>
+    <img src="assets/logo.png" alt="Huffedchat Logo">
+    <h1>Huffedchat</h1>
+  </nav>
+  
+  <main>
+    <div id="login-box">
+      <input type="email" id="email" placeholder="Email">
+      <input type="password" id="password" placeholder="Password">
+      <button onclick="login()">Login</button>
+      <button onclick="signup()">Sign Up</button>
+    </div>
+
+    <div id="chat-section" class="hidden">
+      <div id="feed"></div>
+      <input type="text" id="chatInput" placeholder="Type your message...">
+      <button onclick="sendMessage()">Send</button>
+    </div>
+  </main>
 </body>
 </html>
